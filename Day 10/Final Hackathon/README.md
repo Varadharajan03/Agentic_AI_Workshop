@@ -69,27 +69,145 @@ eligibility-training-tracker/
 
 ---
 
-## 🔄 System Workflow
+## 🔄 Complete System Workflow
 
-The AI system operates through a structured **LangGraph pipeline** consisting of five specialized agents:
+The AI system operates through a comprehensive **LangGraph pipeline** with detailed agent interactions and data flows:
 
 ```mermaid
-graph TD
-    A[📤 Upload Job Description] --> B[🧾 JD Parser Agent]
-    B --> |Extract Requirements| C[✅ Eligibility Mapper Agent]
-    C --> |Check Student Profiles| D[📉 Gap Analyzer Agent]
-    D --> |Identify Deficiencies| E[📚 Training Recommender Agent]
-    E --> |Generate Learning Plans| F[📬 Notifier Agent]
-    F --> |Send Notifications| G[📊 Dashboard Display]
+graph TB
+    %% Input Stage
+    START([🚀 System Start]) --> UPLOAD[📤 Upload Job Description File]
+    UPLOAD --> VALIDATE{📋 Validate File Format}
+    VALIDATE -->|Valid| STORE[(💾 Store JD File)]
+    VALIDATE -->|Invalid| ERROR1[❌ File Format Error]
     
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
-    style E fill:#fce4ec
-    style F fill:#f1f8e9
-    style G fill:#e3f2fd
+    %% JD Parser Agent
+    STORE --> JDP[🧾 JD Parser Agent]
+    JDP --> EXTRACT[🔍 Extract Requirements]
+    EXTRACT --> PARSE_SKILLS[📝 Parse Required Skills]
+    EXTRACT --> PARSE_CGPA[📊 Parse CGPA Requirements]
+    EXTRACT --> PARSE_EXP[💼 Parse Experience Criteria]
+    
+    PARSE_SKILLS --> JD_STRUCT[(📋 Structured JD Data)]
+    PARSE_CGPA --> JD_STRUCT
+    PARSE_EXP --> JD_STRUCT
+    
+    %% Eligibility Mapper Agent
+    JD_STRUCT --> ELI[✅ Eligibility Mapper Agent]
+    ELI --> FETCH_STUDENTS[(👥 Fetch Student Database)]
+    FETCH_STUDENTS --> STUDENT_LOOP{👨‍🎓 For Each Student}
+    
+    STUDENT_LOOP --> CHECK_CGPA[📊 Check CGPA Match]
+    STUDENT_LOOP --> CHECK_SKILLS[🛠️ Check Skills Match]
+    STUDENT_LOOP --> CHECK_EXP[💼 Check Experience Match]
+    
+    CHECK_CGPA --> CLASSIFY{🏷️ Classification Logic}
+    CHECK_SKILLS --> CLASSIFY
+    CHECK_EXP --> CLASSIFY
+    
+    CLASSIFY -->|All Met| ELIGIBLE[🟢 Fully Eligible]
+    CLASSIFY -->|Partial| PARTIAL[🟡 Partially Eligible]
+    CLASSIFY -->|None Met| INELIGIBLE[🔴 Not Eligible]
+    
+    %% Gap Analyzer Agent
+    ELIGIBLE --> GAP[📉 Gap Analyzer Agent]
+    PARTIAL --> GAP
+    INELIGIBLE --> GAP
+    
+    GAP --> SKILL_GAP[🛠️ Identify Skill Gaps]
+    GAP --> CGPA_GAP[📊 Identify CGPA Gaps]
+    GAP --> EXP_GAP[💼 Identify Experience Gaps]
+    GAP --> CERT_GAP[🏆 Identify Certification Gaps]
+    
+    SKILL_GAP --> GAP_REPORT[(📋 Gap Analysis Report)]
+    CGPA_GAP --> GAP_REPORT
+    EXP_GAP --> GAP_REPORT
+    CERT_GAP --> GAP_REPORT
+    
+    %% Training Recommender Agent (RAG)
+    GAP_REPORT --> RAG[📚 Training Recommender Agent]
+    RAG --> VECTOR_DB[(🧠 ChromaDB Vector Store)]
+    RAG --> EMBED[🔗 Generate Query Embeddings]
+    
+    EMBED --> SEARCH[🔍 Semantic Search]
+    VECTOR_DB --> SEARCH
+    SEARCH --> RETRIEVE[📖 Retrieve Relevant Resources]
+    
+    RETRIEVE --> LLM[🤖 Gemini LLM Processing]
+    LLM --> GENERATE[📝 Generate Training Plans]
+    GENERATE --> PERSONALIZE[👤 Personalize Recommendations]
+    
+    PERSONALIZE --> TRAINING_PLAN[(📚 Training Plan Document)]
+    
+    %% Notifier Agent
+    TRAINING_PLAN --> NOTIFY[📬 Notifier Agent]
+    NOTIFY --> EMAIL_PREP[📧 Prepare Email Content]
+    EMAIL_PREP --> SMTP[📮 SMTP Server]
+    
+    SMTP --> SEND_SUCCESS{📤 Email Sent?}
+    SEND_SUCCESS -->|Yes| EMAIL_LOG[(📝 Email Log)]
+    SEND_SUCCESS -->|No| EMAIL_RETRY[🔄 Retry Logic]
+    EMAIL_RETRY --> SMTP
+    
+    %% Dashboard Display
+    EMAIL_LOG --> DASHBOARD[📊 React Dashboard]
+    GAP_REPORT --> DASHBOARD
+    TRAINING_PLAN --> DASHBOARD
+    
+    DASHBOARD --> CHARTS[📈 Generate Analytics Charts]
+    DASHBOARD --> STUDENT_CARDS[👤 Student Status Cards]
+    DASHBOARD --> DOWNLOAD[💾 Export Reports]
+    
+    %% Final States
+    CHARTS --> END([✅ Process Complete])
+    STUDENT_CARDS --> END
+    DOWNLOAD --> END
+    ERROR1 --> END
+    
+    %% Styling
+    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:3px
+    classDef agent fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
+    classDef database fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+    classDef process fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    classDef decision fill:#fce4ec,stroke:#e91e63,stroke-width:2px
+    classDef success fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
+    classDef error fill:#ffebee,stroke:#f44336,stroke-width:2px
+    
+    class START,END startEnd
+    class JDP,ELI,GAP,RAG,NOTIFY agent
+    class STORE,JD_STRUCT,FETCH_STUDENTS,GAP_REPORT,VECTOR_DB,TRAINING_PLAN,EMAIL_LOG database
+    class EXTRACT,PARSE_SKILLS,PARSE_CGPA,PARSE_EXP,CHECK_CGPA,CHECK_SKILLS,CHECK_EXP,SKILL_GAP,CGPA_GAP,EXP_GAP,CERT_GAP,EMBED,SEARCH,RETRIEVE,GENERATE,PERSONALIZE,EMAIL_PREP,CHARTS,STUDENT_CARDS,DOWNLOAD process
+    class VALIDATE,STUDENT_LOOP,CLASSIFY,SEND_SUCCESS decision
+    class ELIGIBLE,PARTIAL success
+    class INELIGIBLE,ERROR1 error
 ```
+
+### Detailed Agent Interaction Flow
+
+#### 🔄 **Phase 1: Document Processing**
+1. **File Upload & Validation**: System accepts JD files and validates format
+2. **JD Parser Agent**: Extracts structured requirements (skills, CGPA, experience)
+3. **Data Storage**: Stores parsed requirements for processing
+
+#### 🔄 **Phase 2: Student Evaluation**  
+1. **Database Retrieval**: Fetches all student profiles from MongoDB
+2. **Eligibility Mapper**: Evaluates each student against JD requirements
+3. **Classification**: Categorizes students as fully/partially/not eligible
+
+#### 🔄 **Phase 3: Gap Analysis**
+1. **Multi-dimensional Analysis**: Identifies gaps in skills, CGPA, experience, certifications
+2. **Gap Prioritization**: Ranks gaps by importance and achievability
+3. **Report Generation**: Creates detailed gap analysis per student
+
+#### 🔄 **Phase 4: RAG-based Recommendations**
+1. **Vector Search**: Queries ChromaDB for relevant training resources
+2. **LLM Processing**: Gemini generates contextual recommendations
+3. **Personalization**: Tailors suggestions based on student profile and gaps
+
+#### 🔄 **Phase 5: Communication & Visualization**
+1. **Email Generation**: Creates personalized training plan emails
+2. **SMTP Delivery**: Sends notifications with retry logic
+3. **Dashboard Update**: Displays results with interactive charts and analytics
 
 ### Agent Workflow Details
 
