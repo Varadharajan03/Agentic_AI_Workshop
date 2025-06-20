@@ -448,6 +448,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
+DEMO_URL -> https://drive.google.com/file/d/1OF9e1jFXCPfWqEgdBOvkKFKBtUK6M0Nc/view?usp=sharing
+
 ## 🙏 Acknowledgments
 
 | Component | Attribution |
@@ -465,9 +467,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions, issues, or contributions:
 
 - **Developer**: Varadharajan
-- **Project Repository**: [GitHub Link]
-- **Documentation**: [Wiki Link]
-- **Issues**: [GitHub Issues]
 
 ---
 
