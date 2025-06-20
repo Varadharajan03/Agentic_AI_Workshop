@@ -1,0 +1,3 @@
+def generate_embeddings(text_chunks):
+    # Use sentence-transformers or Gemini embeddings
+    ...

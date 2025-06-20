@@ -1,0 +1,826 @@
+[
+  {
+    "student_id": "S001",
+    "name": "Alexandra",
+    "cgpa": 8.67,
+    "skills": [
+      "Tableau",
+      "Node.js",
+      "Git",
+      "Kubernetes",
+      "MongoDB",
+      "MySQL",
+      "CSS"
+    ],
+    "internships": 1,
+    "projects": 4,
+    "hackathons": 1,
+    "email": "varadharajan025@gmail.com"
+  },
+  {
+    "student_id": "S002",
+    "name": "Danielle",
+    "cgpa": 7.12,
+    "skills": [
+      "Java",
+      "CSS",
+      "MongoDB",
+      "Python",
+      "React",
+      "Flask",
+      "Tableau"
+    ],
+    "internships": 0,
+    "projects": 5,
+    "hackathons": 1,
+    "email": "kathleen43@austin.com"
+  },
+  {
+    "student_id": "S003",
+    "name": "Monica",
+    "cgpa": 9.79,
+    "skills": [
+      "Power BI",
+      "MySQL",
+      "Spring Boot",
+      "Git",
+      "C++",
+      "AWS",
+      "Python"
+    ],
+    "internships": 3,
+    "projects": 0,
+    "hackathons": 2,
+    "email": "kmorgan@gmail.com"
+  },
+  {
+    "student_id": "S004",
+    "name": "John",
+    "cgpa": 9.15,
+    "skills": [
+      "AWS",
+      "Docker",
+      "CSS",
+      "MySQL"
+    ],
+    "internships": 2,
+    "projects": 1,
+    "hackathons": 4,
+    "email": "lbradshaw@hotmail.com"
+  },
+  {
+    "student_id": "S005",
+    "name": "Michael",
+    "cgpa": 6.91,
+    "skills": [
+      "Flask",
+      "Docker",
+      "JavaScript",
+      "MongoDB",
+      "C++",
+      "Git",
+      "Kubernetes"
+    ],
+    "internships": 0,
+    "projects": 5,
+    "hackathons": 4,
+    "email": "baileytiffany@gmail.com"
+  },
+  {
+    "student_id": "S006",
+    "name": "Vicki",
+    "cgpa": 9.72,
+    "skills": [
+      "Node.js",
+      "Git",
+      "Java",
+      "JavaScript",
+      "AWS",
+      "Spring Boot",
+      "CSS"
+    ],
+    "internships": 0,
+    "projects": 3,
+    "hackathons": 1,
+    "email": "amandanichols@yahoo.com"
+  },
+  {
+    "student_id": "S007",
+    "name": "Ricardo",
+    "cgpa": 6.86,
+    "skills": [
+      "MySQL",
+      "Java",
+      "Docker",
+      "Flask"
+    ],
+    "internships": 2,
+    "projects": 0,
+    "hackathons": 0,
+    "email": "aprilperez@levy.com"
+  },
+  {
+    "student_id": "S008",
+    "name": "Dustin",
+    "cgpa": 6.91,
+    "skills": [
+      "React",
+      "AWS",
+      "Git",
+      "Flask",
+      "Azure",
+      "MongoDB",
+      "Python"
+    ],
+    "internships": 3,
+    "projects": 3,
+    "hackathons": 0,
+    "email": "qgarcia@hotmail.com"
+  },
+  {
+    "student_id": "S009",
+    "name": "Justin",
+    "cgpa": 7.68,
+    "skills": [
+      "Tableau",
+      "Kubernetes",
+      "Git",
+      "Spring Boot",
+      "Node.js",
+      "MySQL",
+      "Docker"
+    ],
+    "internships": 2,
+    "projects": 4,
+    "hackathons": 2,
+    "email": "benjamin80@hotmail.com"
+  },
+  {
+    "student_id": "S010",
+    "name": "Joshua",
+    "cgpa": 7.33,
+    "skills": [
+      "Spring Boot",
+      "Git",
+      "Kubernetes",
+      "CSS",
+      "Power BI"
+    ],
+    "internships": 1,
+    "projects": 1,
+    "hackathons": 4,
+    "email": "michael91@mayo-holt.org"
+  },
+  {
+    "student_id": "S011",
+    "name": "Amy",
+    "cgpa": 6.25,
+    "skills": [
+      "Power BI",
+      "Python",
+      "JavaScript",
+      "CSS"
+    ],
+    "internships": 1,
+    "projects": 0,
+    "hackathons": 0,
+    "email": "alexis06@gmail.com"
+  },
+  {
+    "student_id": "S012",
+    "name": "Daniel",
+    "cgpa": 8.29,
+    "skills": [
+      "AWS",
+      "Tableau",
+      "Azure",
+      "Flask"
+    ],
+    "internships": 2,
+    "projects": 0,
+    "hackathons": 0,
+    "email": "smithangela@walters-snow.net"
+  },
+  {
+    "student_id": "S013",
+    "name": "Christy",
+    "cgpa": 6.12,
+    "skills": [
+      "Flask",
+      "Kubernetes",
+      "Spring Boot",
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "internships": 1,
+    "projects": 3,
+    "hackathons": 3,
+    "email": "jonesbarbara@howell.com"
+  },
+  {
+    "student_id": "S014",
+    "name": "Maxwell",
+    "cgpa": 7.64,
+    "skills": [
+      "Kubernetes",
+      "Spring Boot",
+      "Java",
+      "Tableau",
+      "React",
+      "AWS"
+    ],
+    "internships": 3,
+    "projects": 0,
+    "hackathons": 4,
+    "email": "jwalters@santos-acevedo.com"
+  },
+  {
+    "student_id": "S015",
+    "name": "Victor",
+    "cgpa": 8.7,
+    "skills": [
+      "MongoDB",
+      "Kubernetes",
+      "Flask",
+      "Spring Boot",
+      "Git"
+    ],
+    "internships": 3,
+    "projects": 4,
+    "hackathons": 4,
+    "email": "kathryn47@stewart.biz"
+  },
+  {
+    "student_id": "S016",
+    "name": "Lisa",
+    "cgpa": 9.51,
+    "skills": [
+      "Python",
+      "Azure",
+      "Node.js",
+      "HTML"
+    ],
+    "internships": 1,
+    "projects": 2,
+    "hackathons": 1,
+    "email": "randy48@moss.com"
+  },
+  {
+    "student_id": "S017",
+    "name": "Gina",
+    "cgpa": 8.14,
+    "skills": [
+      "Python",
+      "Spring Boot",
+      "CSS",
+      "MongoDB"
+    ],
+    "internships": 1,
+    "projects": 5,
+    "hackathons": 2,
+    "email": "haynesdana@gmail.com"
+  },
+  {
+    "student_id": "S018",
+    "name": "Madison",
+    "cgpa": 7.43,
+    "skills": [
+      "Power BI",
+      "Docker",
+      "Flask",
+      "MySQL"
+    ],
+    "internships": 0,
+    "projects": 1,
+    "hackathons": 3,
+    "email": "bairdmark@wells-fitzgerald.com"
+  },
+  {
+    "student_id": "S019",
+    "name": "Daniel",
+    "cgpa": 6.7,
+    "skills": [
+      "Node.js",
+      "Power BI",
+      "Java",
+      "C++",
+      "Kubernetes",
+      "MongoDB"
+    ],
+    "internships": 1,
+    "projects": 4,
+    "hackathons": 0,
+    "email": "parkertyler@mitchell.com"
+  },
+  {
+    "student_id": "S020",
+    "name": "Andrea",
+    "cgpa": 8.96,
+    "skills": [
+      "Docker",
+      "Tableau",
+      "React",
+      "Java"
+    ],
+    "internships": 3,
+    "projects": 0,
+    "hackathons": 2,
+    "email": "kristi37@lewis.com"
+  },
+  {
+    "student_id": "S021",
+    "name": "Heidi",
+    "cgpa": 8.06,
+    "skills": [
+      "MySQL",
+      "Azure",
+      "Python",
+      "HTML",
+      "Flask",
+      "Java"
+    ],
+    "internships": 3,
+    "projects": 2,
+    "hackathons": 3,
+    "email": "eevans@nguyen.biz"
+  },
+  {
+    "student_id": "S022",
+    "name": "Noah",
+    "cgpa": 8.25,
+    "skills": [
+      "Node.js",
+      "JavaScript",
+      "CSS",
+      "Spring Boot"
+    ],
+    "internships": 0,
+    "projects": 4,
+    "hackathons": 2,
+    "email": "ashleenunez@white.org"
+  },
+  {
+    "student_id": "S023",
+    "name": "Larry",
+    "cgpa": 6.21,
+    "skills": [
+      "Kubernetes",
+      "Power BI",
+      "CSS",
+      "Git",
+      "JavaScript",
+      "Docker"
+    ],
+    "internships": 2,
+    "projects": 0,
+    "hackathons": 3,
+    "email": "fmarshall@gmail.com"
+  },
+  {
+    "student_id": "S024",
+    "name": "Vincent",
+    "cgpa": 6.45,
+    "skills": [
+      "Java",
+      "React",
+      "Kubernetes",
+      "Flask"
+    ],
+    "internships": 0,
+    "projects": 1,
+    "hackathons": 4,
+    "email": "yharris@yahoo.com"
+  },
+  {
+    "student_id": "S025",
+    "name": "Michele",
+    "cgpa": 8.13,
+    "skills": [
+      "React",
+      "Flask",
+      "Node.js",
+      "Tableau",
+      "Python",
+      "Spring Boot"
+    ],
+    "internships": 3,
+    "projects": 3,
+    "hackathons": 1,
+    "email": "sperkins@gallegos.com"
+  },
+  {
+    "student_id": "S026",
+    "name": "Carlos",
+    "cgpa": 9.37,
+    "skills": [
+      "Power BI",
+      "AWS",
+      "Docker",
+      "Git",
+      "Tableau"
+    ],
+    "internships": 3,
+    "projects": 1,
+    "hackathons": 4,
+    "email": "tracymoore@hardy-flores.org"
+  },
+  {
+    "student_id": "S027",
+    "name": "Christopher",
+    "cgpa": 8.12,
+    "skills": [
+      "Tableau",
+      "C++",
+      "Java",
+      "Flask",
+      "Spring Boot",
+      "MongoDB",
+      "Power BI"
+    ],
+    "internships": 2,
+    "projects": 3,
+    "hackathons": 4,
+    "email": "sarahmaddox@gmail.com"
+  },
+  {
+    "student_id": "S028",
+    "name": "Kenneth",
+    "cgpa": 8.51,
+    "skills": [
+      "Flask",
+      "Power BI",
+      "MongoDB",
+      "Git",
+      "JavaScript"
+    ],
+    "internships": 0,
+    "projects": 5,
+    "hackathons": 0,
+    "email": "tracy04@williamson.com"
+  },
+  {
+    "student_id": "S029",
+    "name": "Alan",
+    "cgpa": 6.99,
+    "skills": [
+      "MySQL",
+      "C++",
+      "MongoDB",
+      "React",
+      "Power BI"
+    ],
+    "internships": 1,
+    "projects": 2,
+    "hackathons": 4,
+    "email": "davidsonjennifer@santiago-santiago.com"
+  },
+  {
+    "student_id": "S030",
+    "name": "Laura",
+    "cgpa": 6.48,
+    "skills": [
+      "Node.js",
+      "JavaScript",
+      "C++",
+      "MySQL",
+      "Kubernetes",
+      "Spring Boot",
+      "HTML"
+    ],
+    "internships": 0,
+    "projects": 3,
+    "hackathons": 3,
+    "email": "klopez@yahoo.com"
+  },
+  {
+    "student_id": "S031",
+    "name": "David",
+    "cgpa": 8.96,
+    "skills": [
+      "CSS",
+      "Git",
+      "HTML",
+      "Python",
+      "Kubernetes",
+      "Flask"
+    ],
+    "internships": 1,
+    "projects": 1,
+    "hackathons": 2,
+    "email": "megan19@gmail.com"
+  },
+  {
+    "student_id": "S032",
+    "name": "Cindy",
+    "cgpa": 6.84,
+    "skills": [
+      "Power BI",
+      "MongoDB",
+      "Kubernetes",
+      "Git",
+      "React"
+    ],
+    "internships": 1,
+    "projects": 3,
+    "hackathons": 2,
+    "email": "atorres@gmail.com"
+  },
+  {
+    "student_id": "S033",
+    "name": "Peter",
+    "cgpa": 6.28,
+    "skills": [
+      "C++",
+      "Power BI",
+      "Docker",
+      "Kubernetes"
+    ],
+    "internships": 2,
+    "projects": 1,
+    "hackathons": 3,
+    "email": "dawnjones@yahoo.com"
+  },
+  {
+    "student_id": "S034",
+    "name": "Thomas",
+    "cgpa": 6.51,
+    "skills": [
+      "MySQL",
+      "Power BI",
+      "C++",
+      "Java"
+    ],
+    "internships": 1,
+    "projects": 3,
+    "hackathons": 4,
+    "email": "fosteralec@carlson.com"
+  },
+  {
+    "student_id": "S035",
+    "name": "William",
+    "cgpa": 7.79,
+    "skills": [
+      "Node.js",
+      "Git",
+      "Spring Boot",
+      "C++",
+      "MySQL"
+    ],
+    "internships": 0,
+    "projects": 4,
+    "hackathons": 3,
+    "email": "debbieflores@gmail.com"
+  },
+  {
+    "student_id": "S036",
+    "name": "Cassie",
+    "cgpa": 7.83,
+    "skills": [
+      "Git",
+      "Tableau",
+      "Kubernetes",
+      "C++",
+      "MySQL",
+      "JavaScript"
+    ],
+    "internships": 1,
+    "projects": 4,
+    "hackathons": 0,
+    "email": "ureeves@hotmail.com"
+  },
+  {
+    "student_id": "S037",
+    "name": "Megan",
+    "cgpa": 7.55,
+    "skills": [
+      "Azure",
+      "MySQL",
+      "Spring Boot",
+      "Power BI",
+      "Java",
+      "Node.js"
+    ],
+    "internships": 2,
+    "projects": 2,
+    "hackathons": 3,
+    "email": "paulyates@olson-jones.biz"
+  },
+  {
+    "student_id": "S038",
+    "name": "Dylan",
+    "cgpa": 7.1,
+    "skills": [
+      "Docker",
+      "CSS",
+      "Java",
+      "JavaScript",
+      "Tableau"
+    ],
+    "internships": 3,
+    "projects": 3,
+    "hackathons": 1,
+    "email": "terry89@hotmail.com"
+  },
+  {
+    "student_id": "S039",
+    "name": "Lori",
+    "cgpa": 6.54,
+    "skills": [
+      "Flask",
+      "MySQL",
+      "Power BI",
+      "Spring Boot",
+      "C++",
+      "Tableau"
+    ],
+    "internships": 2,
+    "projects": 2,
+    "hackathons": 4,
+    "email": "samanthagamble@clark.com"
+  },
+  {
+    "student_id": "S040",
+    "name": "Kimberly",
+    "cgpa": 7.57,
+    "skills": [
+      "MySQL",
+      "Azure",
+      "Python",
+      "Kubernetes",
+      "Spring Boot",
+      "Git",
+      "HTML"
+    ],
+    "internships": 1,
+    "projects": 5,
+    "hackathons": 2,
+    "email": "katherinewilliams@yahoo.com"
+  },
+  {
+    "student_id": "S041",
+    "name": "Chelsea",
+    "cgpa": 7.69,
+    "skills": [
+      "Azure",
+      "Git",
+      "MongoDB",
+      "CSS",
+      "Python",
+      "Java",
+      "JavaScript"
+    ],
+    "internships": 3,
+    "projects": 3,
+    "hackathons": 2,
+    "email": "qberger@jackson-bradford.net"
+  },
+  {
+    "student_id": "S042",
+    "name": "Sandra",
+    "cgpa": 7.79,
+    "skills": [
+      "React",
+      "AWS",
+      "Spring Boot",
+      "Git",
+      "Tableau",
+      "Kubernetes",
+      "MySQL"
+    ],
+    "internships": 0,
+    "projects": 1,
+    "hackathons": 2,
+    "email": "jonathonmahoney@lucero-bradley.net"
+  },
+  {
+    "student_id": "S043",
+    "name": "Sheri",
+    "cgpa": 7.83,
+    "skills": [
+      "Python",
+      "AWS",
+      "MySQL",
+      "Spring Boot"
+    ],
+    "internships": 2,
+    "projects": 0,
+    "hackathons": 4,
+    "email": "karacardenas@stephenson.info"
+  },
+  {
+    "student_id": "S044",
+    "name": "Catherine",
+    "cgpa": 7.47,
+    "skills": [
+      "Git",
+      "C++",
+      "AWS",
+      "JavaScript",
+      "CSS",
+      "Spring Boot",
+      "Tableau"
+    ],
+    "internships": 2,
+    "projects": 5,
+    "hackathons": 0,
+    "email": "james21@hayes.com"
+  },
+  {
+    "student_id": "S045",
+    "name": "Jason",
+    "cgpa": 9.46,
+    "skills": [
+      "Kubernetes",
+      "Git",
+      "HTML",
+      "Docker",
+      "MongoDB"
+    ],
+    "internships": 3,
+    "projects": 4,
+    "hackathons": 3,
+    "email": "idavis@yahoo.com"
+  },
+  {
+    "student_id": "S046",
+    "name": "Jason",
+    "cgpa": 8.44,
+    "skills": [
+      "AWS",
+      "Git",
+      "JavaScript",
+      "React"
+    ],
+    "internships": 1,
+    "projects": 1,
+    "hackathons": 0,
+    "email": "harperwilliam@hotmail.com"
+  },
+  {
+    "student_id": "S047",
+    "name": "Vickie",
+    "cgpa": 7.75,
+    "skills": [
+      "Flask",
+      "Python",
+      "JavaScript",
+      "CSS",
+      "Node.js",
+      "Docker"
+    ],
+    "internships": 3,
+    "projects": 4,
+    "hackathons": 2,
+    "email": "stevensjonathan@hotmail.com"
+  },
+  {
+    "student_id": "S048",
+    "name": "Karen",
+    "cgpa": 7.64,
+    "skills": [
+      "Tableau",
+      "Flask",
+      "JavaScript",
+      "CSS",
+      "Kubernetes"
+    ],
+    "internships": 3,
+    "projects": 1,
+    "hackathons": 3,
+    "email": "dcruz@green-gardner.com"
+  },
+  {
+    "student_id": "S049",
+    "name": "Kayla",
+    "cgpa": 8.74,
+    "skills": [
+      "CSS",
+      "Node.js",
+      "JavaScript",
+      "MongoDB",
+      "C++",
+      "Azure",
+      "React"
+    ],
+    "internships": 2,
+    "projects": 0,
+    "hackathons": 2,
+    "email": "michellestone@miller-floyd.com"
+  },
+  {
+    "student_id": "S050",
+    "name": "Gregory",
+    "cgpa": 6.16,
+    "skills": [
+      "Tableau",
+      "Spring Boot",
+      "MongoDB",
+      "CSS"
+    ],
+    "internships": 0,
+    "projects": 5,
+    "hackathons": 2,
+    "email": "pgomez@kramer.com"
+  }
+]
